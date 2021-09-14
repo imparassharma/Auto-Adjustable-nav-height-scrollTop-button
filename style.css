@@ -1,0 +1,249 @@
+*{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+header{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    padding-right: 10px;
+    width: 100%;
+
+}
+
+header img{
+    width: 20%;
+    margin-left: 25px;
+}
+
+nav{
+    margin-left: 150px;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    margin-right: 40px;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+.links-container{
+    display: flex;
+    align-items: center;
+}
+.nav-header button{
+    display: none;
+}
+
+.home{
+    background-image: url(images/pokeballs.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(9, 9, 97);
+
+}
+
+.home h1{
+    font-size: 45px;
+    font-weight: 600;
+    color: red;
+    border: solid 2px rgb(255, 255, 255);
+    background-color: black;
+    padding: 10px 10px;
+    border-radius: 2px;
+}
+
+.home span{
+    color: white;
+}
+
+.button button{
+    width: 200px;
+    background-color: rgb(0, 0, 0);
+    height: 50px;
+    color: white;
+    font-weight: 400;
+    border-radius: 5px;
+}
+
+
+.pokemon{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: solid 10px rgb(2, 2, 2);
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 500px;
+    border: solid 2px black;
+    margin-left: 50px;
+    background-color: rgba(41, 38, 38, 0.623);
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 0.774);
+}
+
+.info p{
+    width: 90%;
+}
+
+.pokemon1{
+    background-image: url(images/pikachu.png);
+}
+.pokemon1 .info{
+    margin-top: -100px;
+}
+
+.pokemon2{
+    background-image: url(images/charizard.jpg);
+}
+.pokemon2 .info{
+    margin-left: 60%;
+}
+.pokemon3{
+    background-image: url(images/Jigglypuff.png);
+}
+.pokemon3 .info{
+    margin-top: 280px;
+}
+
+.pokemon4{
+    background-image: url(images/bulbasor.jpg);
+}
+
+
+@media screen and (max-width:400px) {
+
+    .top-link{
+        position: fixed;
+        left: 300px;
+        top: 700px;
+        width: 50px;
+        font-size: 46px;
+        height: 7vh;
+        display: none;
+    }
+
+    .nav-links{
+        display: none;
+    }
+    
+    header{
+        width: 100%;
+        flex-direction: column;
+        position: relative;;
+    }
+
+    header img{
+        width: 200px;
+        margin-left: -30px;
+    }
+
+    .nav-header button{
+        display: block;
+        height: 4vh;
+        width: 40px;
+        margin-left: 100px;
+    }
+
+    nav{
+        margin-left: 0;
+        margin-right: 250px;
+    }
+    
+    .nav-header{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+    }
+
+    .show-links .nav-links{
+        display: block;
+    }
+    
+    .show-links .top-link{
+        display: block;
+    }
+
+    .links-container{
+        height: auto !important;
+    }
+
+    nav li{
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav a{
+        margin-bottom: 20px;
+        
+    }
+
+    .main h1{
+        width: 300px;
+        text-align: center;
+    }
+
+    .home{
+        margin-top: -100px;
+    }
+    .main button{
+        height: 60px;
+        font-size: 18px;
+        width: 300px;
+        margin-top: 25px;
+    }
+
+    .pokemon{
+        height: 28vh;
+        margin-bottom: 200px;
+        border: 1px solid black;
+    }
+
+
+    .info{
+       margin-top: 380px;
+       margin-left: 0;
+       width: 100%;
+       border: 0px;
+       border-radius: 0;
+       border: solid 2px black;
+    }
+
+    .pokemon1 .info{
+        margin-top: 380px;
+    }
+
+    .pokemon2 .info{
+        margin-left:0px;
+    }
+
+    .pokemon3 .info{
+        margin-top: 380px;
+    }
+}
