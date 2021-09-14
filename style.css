@@ -46,6 +46,9 @@ nav ul{
     display: none;
 }
 
+.top-link{
+    display:none;
+}
 .home{
     background-image: url(images/pokeballs.jpg);
     background-position: center;
